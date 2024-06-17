@@ -10,10 +10,10 @@ public class program06 {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter radius: ");
-        double radius = sc.nextDouble();
+        double radiuss = sc.nextDouble();
 
-        double c = calculator.circumference(radius);
-        double v = calculator.volume(radius);
+        double c = calculator.circumference(radiuss);
+        double v = calculator.volume(radiuss);
 
         System.out.printf("Circumference: %.2f%n", c);
         System.out.printf("Volume: %.2f%n", v);
