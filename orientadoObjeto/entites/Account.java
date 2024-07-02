@@ -2,7 +2,7 @@ package nelioAlves.orientadoObjeto.entites;
 
 public class Account {
 
-    private int number; // numero da conta
+    private final int number; // numero da conta
     private String holder; // nome titular
     private double balance; // valor
 
