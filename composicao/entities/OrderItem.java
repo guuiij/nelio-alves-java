@@ -1,19 +1,26 @@
 package nelioAlves.composicao.entities;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class OrderItem {
     private Integer quantity;
     private Double price;
-    private List<Product> productList = new ArrayList();
+    private Product product;
 
     public OrderItem() {
     }
 
-    public OrderItem(Integer quantity, Double price) {
+
+    public OrderItem(Integer quantity, Double price, Product product) {
         this.quantity = quantity;
         this.price = price;
+        this.product = product;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
     }
 
     public Integer getQuantity() {
@@ -33,14 +40,18 @@ public class OrderItem {
     }
 
     public double subTotal() {
-        return (double)this.quantity * this.price;
+        return price * quantity;
     }
 
-    public List<Product> getProductList() {
-        return this.productList;
-    }
+    @Override
+    public String toString() {
 
-    public void addProduct(Product products) {
-        this.productList.add(products);
+        return getProduct().getName()
+                + ", $"
+                + String.format("%.2f", price)
+                + ", Quantity: "
+                + quantity
+                + ", Subtotal: $"
+                + String.format("%.2f", subTotal());
     }
 }

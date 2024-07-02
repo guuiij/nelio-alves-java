@@ -14,6 +14,7 @@ public class ProgramWorker01 {
     }
 
     public static void main(String[] args) throws ParseException {
+
         Scanner sc = new Scanner(System.in);
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         System.out.print("Enter department's name: ");
@@ -26,6 +27,7 @@ public class ProgramWorker01 {
         System.out.print("BaseSalary: ");
         double baseSalary = sc.nextDouble();
         Worker worker = new Worker(workerName, WorkerLevel.valueOf(workerLevel), baseSalary, new Department(departmentName));
+
         System.out.println("How many contracts to this worker? ");
         int n = sc.nextInt();
 
