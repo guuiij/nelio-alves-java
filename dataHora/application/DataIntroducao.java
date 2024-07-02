@@ -2,7 +2,6 @@ package nelioAlves.dataHora.application;
 
 import academy.maratonajava.javacore.Gassociacao.Dominio.Local;
 
-import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -10,13 +9,9 @@ import java.time.format.DateTimeFormatter;
 
 public class DataIntroducao {
     public static void main(String[] args) {
-
-
         // https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/format/DateTimeFormatter.html
         DateTimeFormatter fmt01 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         DateTimeFormatter fmt02 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
-
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
 
         //Declarando variável tipo LocalDate
@@ -34,7 +29,6 @@ public class DataIntroducao {
         // Instanciando datar isolada " Dia, mes,ano [horario] -> data hora
         LocalDate d10 = LocalDate.of(2024,6,18);
         LocalDateTime d11 = LocalDateTime.of(2024,6,18, 3, 12);
-
 
 
 

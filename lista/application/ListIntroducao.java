@@ -62,7 +62,7 @@ public class ListIntroducao {
 
         // ** SE PROCURAR ALGUEM QUE NÂO EXISTE
         System.out.println("------------------ "); // QUANDO NAO ENCONTRA RETORNA -1
-        System.out.println("CASO PROCURE ALGUÉM QUE NAO EXISTE");
+        System.out.println("CASO PROCURE ALGUEM QUE NAO EXISTE");
         System.out.println("Index of Marconi: " + list.indexOf("Marconi"));
         System.out.println();
 

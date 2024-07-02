@@ -19,6 +19,6 @@ public class program06 {
         System.out.printf("Volume: %.2f%n", v);
         System.out.printf("PI value: %.2f%n", calculator.PI);
 
-        sc.close();
+        sc.close();;
     }
 }
