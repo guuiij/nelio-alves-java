@@ -77,11 +77,11 @@ public class Order {
         sb.append("Client: ");
         sb.append(client + "\n");
         sb.append("Order items: \n");
-        for (OrderItem item : items){
+        for (OrderItem item : items) {
             sb.append(item + "\n");
         }
         sb.append("Total price: $");
-        sb.append(String.format("%.2f" , total()));
-        return  sb.toString();
+        sb.append(String.format("%.2f", total()));
+        return sb.toString();
     }
 }

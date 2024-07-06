@@ -38,8 +38,6 @@ public class ProgramOrder03 {
         System.out.print("Status: ");
 
         OrderStatus status = OrderStatus.valueOf(sc.next());
-
-
         Order order = new Order(new Date(), status, client);
 
         System.out.print("How many items to this order? ");
@@ -47,7 +45,6 @@ public class ProgramOrder03 {
         sc.nextLine();
 
         for (int i = 1; i <= countItem; ++i) {
-
             System.out.println("Enter #" + i + " item");
             System.out.print("Product name: ");
             String productName = sc.nextLine();
@@ -60,8 +57,6 @@ public class ProgramOrder03 {
             Product product = new Product(productName, productPrice);
             OrderItem it = new OrderItem(quantity, productPrice, product);
             order.addItem(it);
-
-
         }
 
         System.out.println();
