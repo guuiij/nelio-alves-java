@@ -20,12 +20,15 @@ public class SavingsAccount extends Account {
         this.interestRate = interestRate;
     }
 
-    public void upDateBalance(){
-        balance += balance *interestRate;
+    public void upDateBalance() {
+        balance += balance * interestRate;
 
     }
 
-
+    @Override
+    public void withDraw(double amount) {
+        balance -= amount;
+    }
 
 
 }
