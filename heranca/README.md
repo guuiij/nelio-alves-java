@@ -16,6 +16,7 @@ Este diretório contém exercícios e projetos relacionados ao conceito de heran
 
 - [x] Classe `Account` ,Classe `BusinessAccount`,Classe `SavingsAccount`
 - [x] Classe `Employee`,Classe `OutsourceEmployee`
+- [x] Classe `Product`,Classe `ImportedProduct`,Classe `UsedProduct`
 - [ ] Classe `Pessoa`
 - [ ] Classe `Veiculo`
 - [ ] Classe `Funcionário`

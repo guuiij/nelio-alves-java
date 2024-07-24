@@ -1,17 +1,35 @@
 package nelioAlves.dataHora.application;
 
-import academy.maratonajava.javacore.Gassociacao.Dominio.Local;
-
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
-public class DataIntroducao {
-    public static void main(String[] args) {
+public class DateIntro {
+    public static void main(String[] args) throws ParseException {
         // https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/format/DateTimeFormatter.html
         DateTimeFormatter fmt01 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         DateTimeFormatter fmt02 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+
+        //Instanciação do SimpleDateFormat:
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
+        //Formatação de uma Date para String:
+        Date date = new Date(); // data atual
+        String formattedDate = sdf.format(date);
+        System.out.println("Data formatada: " + formattedDate);
+
+        //Análise (parsing) de uma String para Date:
+        String dateString = "16/07/2024";
+            Date parsedDate = sdf.parse(dateString);
+            System.out.println("Data analisada: " + parsedDate);
+
+
+
+
 
 
         //Declarando variável tipo LocalDate
